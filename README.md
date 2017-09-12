@@ -14,9 +14,7 @@ Summary: ez_setup.py and distribute_setup.py
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/ez_setup-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/ez_setup-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/ez_setup-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/ez_setup-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/ez_setup-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/ez-setup-feedstock/branch/master)
+All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/ez_setup-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/ez_setup-feedstock)
 
 Current release info
 ====================

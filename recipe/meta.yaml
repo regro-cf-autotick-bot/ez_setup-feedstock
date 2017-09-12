@@ -1,21 +1,22 @@
-{%set name = "ez_setup" %}
-{%set version = "0.9" %}
-{%set compress_type = "tar.gz" %}
-{%set hash_type = "sha256" %}
-{%set hash_val = "303c5b17d552d1e3fb0505d80549f8579f557e13d8dc90e5ecef3c07d7f58642" %}
-{%set build_num = "0" %}
+{% set name = "ez_setup" %}
+{% set version = "0.9" %}
+{% set bundle = "tar.gz" %}
+{% set hash_type = "sha256" %}
+{% set hash = "303c5b17d552d1e3fb0505d80549f8579f557e13d8dc90e5ecef3c07d7f58642" %}
+{% set build = 0 %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.{{ compress_type }}
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ compress_type }}
-  {{ hash_type }}: {{ hash_val }}
+  fn: {{ name }}-{{ version }}.{{ bundle }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ bundle }}
+  {{ hash_type }}: {{ hash }}
 
 build:
-  number: {{ build_num }}
+  noarch: python
+  number: {{ build }}
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
